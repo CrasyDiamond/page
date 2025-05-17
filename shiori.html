@@ -104,14 +104,82 @@
             color: #daa520;
             margin-top: 0;
         }
+        /* 宿泊先情報のスタイル */
+        .accommodation-info {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e0f7fa; /* 明るい水色 */
+            border: 1px solid #00bcd4;
+            border-radius: 8px;
+        }
+        .accommodation-info h2 {
+            color: #007b8f;
+            border-bottom: 2px solid #007b8f;
+            margin-bottom: 15px;
+        }
+        .accommodation-info p {
+            margin-bottom: 10px;
+        }
+        .accommodation-info ul {
+            list-style: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .accommodation-info a {
+            color: #007b8f;
+            text-decoration: none;
+        }
+        .accommodation-info a:hover {
+            text-decoration: underline;
+        }
+        /* 目次のスタイル */
+        .table-of-contents {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f0f4f8; /* 薄いグレー */
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+        }
+        .table-of-contents h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .table-of-contents ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .table-of-contents li {
+            margin-bottom: 5px;
+        }
+        .table-of-contents a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .table-of-contents a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <h1>河口湖オフサイト林間学校のしおり</h1>
 
+        <div class="table-of-contents">
+            <h3>目次</h3>
+            <ul>
+                <li><a href="#day1">1日目工程：5月21日(水)</a></li>
+                <li><a href="#day2">2日目工程：5月22日(木)</a></li>
+                <li><a href="#accommodation">宿泊先情報</a></li>
+            </ul>
+        </div>
+
         <div class="section">
-            <h2>＜1日目：5月21日(水)＞</h2>
+            <h2 id="day1">＜1日目：5月21日(水)＞</h2>
             <div class="schedule-item"><strong>8:35</strong> 原さん家ピック</div>
             <div class="schedule-item"><strong>8:50</strong> 武蔵小杉駅組ピック</div>
             <div class="schedule-item">※SAに寄りつつ河口湖方面へ移動</div>
@@ -131,7 +199,7 @@
         </div>
 
         <div class="day2-section">
-            <h2>＜2日目：5月22日(木)＞</h2>
+            <h2 id="day2">＜2日目：5月22日(木)＞</h2>
             <div class="schedule-item"><strong>9:00〜</strong> 会議、仕事、朝食、準備と片付けなど</div>
 
             <div class="plan-options">
@@ -154,15 +222,39 @@
                     <div class="schedule-item"><strong>17:00</strong> 川崎到着、車を置いて飲みに行く（自由解散）</div>
                 </div>
 
-                <div class="plan-option">
-                    <h4>▼プランC：アクティビティ＆昼食を楽しんでから帰路へ</h4>
-                    <div class="schedule-item"><strong>10:30</strong> チェックアウト</div>
-                    <div class="schedule-item"><strong>11:00</strong> 何かしらの河口湖アクティビティを楽しむ</div>
-                    <div class="schedule-item"><strong>13:00</strong> 昼食（河口湖周辺の飲食店にて）</div>
-                    <div class="schedule-item"><strong>14:00</strong> 昼食後、帰路へ出発</div>
-                    <div class="schedule-item"><strong>16:30</strong> 川崎到着、車を置いて飲みに行く（自由解散）</div>
-                </div>
             </div>
+        </div>
+
+        <div class="accommodation-info" id="accommodation">
+            <h2>【宿泊先情報】</h2>
+            <p><strong>宿泊先：</strong> グランピングヴィレッジ富士河口湖</p>
+            <p><strong>URL：</strong> <a href="https://www.nature-glamping.com/" target="_blank">https://www.nature-glamping.com/</a></p>
+            <p><strong>設備：</strong></p>
+            <ul>
+                <li>調理器具(まな板、包丁、パン切包丁、鍋、フライパン)</li>
+                <li>お皿、箸・フォーク等のカトラリー一式</li>
+                <li>冷蔵庫</li>
+                <li>電子レンジ</li>
+                <li>IH</li>
+                <li>電気ポット</li>
+                <li>ヘアドライヤー</li>
+            </ul>
+            <p>※炊飯器のご用意はありません</p>
+            <p><strong>アメニティ：</strong></p>
+            <ul>
+                <li>部屋着</li>
+                <li>フェイスタオル、バスタオル</li>
+                <li>カミソリ</li>
+                <li>歯ブラシ</li>
+                <li>クシ</li>
+                <li>ボディタオル</li>
+                <li>コットンセット</li>
+                <li>ボディソープ</li>
+                <li>シャンプー</li>
+                <li>コンディショナー</li>
+                <li>コーヒー、紅茶</li>
+                <li>ミネラルウォーター</li>
+            </ul>
         </div>
 
         </div>
