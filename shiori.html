@@ -162,6 +162,38 @@
         .table-of-contents a:hover {
             text-decoration: underline;
         }
+        /* 買うものリストのスタイル */
+        .shopping-list {
+            margin-top: 30px;
+            margin-bottom: 25px; /* 次のセクションとの間にスペース */
+            padding: 15px;
+            background-color: #e0f2f7; /* 緑と青に寄せた薄い色 */
+            border: 1px solid #4dd0e1; /* 少し濃いめのボーダー */
+            border-radius: 8px;
+        }
+        .shopping-list h2 {
+            color: #00838f; /* 少し濃い青緑 */
+            border-bottom: 2px solid #00838f;
+            margin-bottom: 15px;
+        }
+        .shopping-list ul {
+            list-style: none; /* デフォルトのリストマーカーをなくす */
+            padding: 0;
+            margin: 0;
+        }
+         .shopping-list ul li {
+            margin-bottom: 8px; /* リスト項目の間隔 */
+        }
+        .shopping-list ul ul { /* ネストされたリストのスタイル */
+            list-style: disc; /* 内側のリストはディスクマーカー */
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+         .shopping-list ul ul li {
+            margin-bottom: 3px; /* ネストされたリスト項目の間隔 */
+        }
+
 
     </style>
 </head>
@@ -172,10 +204,10 @@
         <div class="table-of-contents">
             <h3>目次</h3>
             <ul>
-                <li><a href="#day1">1日目工程：5月21日(水)</a></li>
-                <li><a href="#day2">2日目工程：5月22日(木)</a></li>
-                <li><a href="#accommodation">宿泊先情報</a></li>
-            </ul>
+                <li><a href="#day1">1 | 1日目工程：5月21日(水)</a></li>
+                <li><a href="#day2">2 | 2日目工程：5月22日(木)</a></li>
+                <li><a href="#accommodation">3 | 宿泊先情報</a></li>
+                 <li><a href="#shopping_list">4 | 買うもの</a></li> </ul>
         </div>
 
         <div class="section">
@@ -256,6 +288,36 @@
                 <li>ミネラルウォーター</li>
             </ul>
         </div>
+
+         <div class="shopping-list" id="shopping_list">
+            <h2>【買うもの】</h2>
+            <ul>
+                <li>夕食
+                    <ul>
+                        <li>お肉</li>
+                        <li>調味料やソース系</li>
+                        <li>お酒各種</li>
+                        <li>おつまみ</li>
+                        <li>ラーメン</li>
+                        <li>水、お茶</li>
+                    </ul>
+                </li>
+                <li>朝食
+                     <ul>
+                        <li>パンなど好みで</li>
+                        <li>コーヒー（あるらしいけど念のため）</li>
+                    </ul>
+                </li>
+                <li>備品
+                     <ul>
+                        <li>蚊取り線香</li>
+                        <li>薪</li>
+                        <li>ライター</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
 
         </div>
 </body>
