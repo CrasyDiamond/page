@@ -13,6 +13,8 @@
             padding: 20px;
             background-color: #f4f7f6;
             color: #333;
+            position: relative; /* for the back-to-top link */
+            padding-bottom: 80px; /* Add more padding at the bottom for the fixed link */
         }
         .container {
             max-width: 800px;
@@ -194,11 +196,33 @@
             margin-bottom: 3px; /* ネストされたリスト項目の間隔 */
         }
 
+        /* ページトップに戻るリンクのスタイル */
+        .back-to-top {
+            position: fixed; /* 画面に固定 */
+            bottom: 20px; /* 下から20px */
+            right: 20px; /* 右から20px */
+            background-color: #0056b3; /* 背景色 */
+            color: white; /* 文字色 */
+            width: 40px; /* ボタンの幅 */
+            height: 40px; /* ボタンの高さ */
+            border-radius: 50%; /* 丸い形 */
+            display: flex; /* フレックスボックスを使用 */
+            align-items: center; /* 垂直方向中央揃え */
+            justify-content: center; /* 水平方向中央揃え */
+            text-decoration: none; /* 下線をなくす */
+            font-size: 24px; /* 矢印のサイズ */
+            line-height: 1; /* 行の高さを調整 */
+            z-index: 1000; /* 他の要素より前面に */
+            transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 影を追加 */
+        }
+        .back-to-top:hover {
+            background-color: #003366; /* ホバー時の背景色 */
+        }
 
     </style>
 </head>
-<body>
-    <div class="container">
+<body id="top"> <div class="container">
         <h1>河口湖オフサイト林間学校のしおり</h1>
 
         <div class="table-of-contents">
@@ -207,7 +231,8 @@
                 <li><a href="#day1">1 | 1日目工程：5月21日(水)</a></li>
                 <li><a href="#day2">2 | 2日目工程：5月22日(木)</a></li>
                 <li><a href="#accommodation">3 | 宿泊先情報</a></li>
-                 <li><a href="#shopping_list">4 | 買うもの</a></li> </ul>
+                 <li><a href="#shopping_list">4 | 買うもの</a></li>
+            </ul>
         </div>
 
         <div class="section">
@@ -319,6 +344,7 @@
         </div>
 
 
-        </div>
+    </div> <a href="#top" class="back-to-top">&uarr;</a>
+
 </body>
 </html>
